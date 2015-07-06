@@ -1,0 +1,26 @@
+<ion-view view-title="Jobs">
+    <ion-content class="has-header" delegate-handle="mainScroll">
+        <ion-spinner class="text-center block" ng-if="!viewModel.ready" icon="android"></ion-spinner>
+        <ion-list>
+            <ion-item href="#/tab/job/{{item.id}}" class="item-avatar"
+                      collection-repeat="item in viewModel.datasource"
+                      collection-item-width="'100%'"
+                      collection-item-height="92">
+                <img ng-src="{{item.createdBy.get('avatar').url()}}" />
+                <h2>{{item.title}}</h2>
+                <span class="item-note">
+                    {{item.view}}
+                </span>
+                <p>
+                    {{timeRemaining(item.createdAt)}} &nbsp;
+                    {{getJobTypeName(item.type)}}
+                </p>
+            </ion-item>
+            <ion-item class="padding text-center" ng-if="!posts && timesUp">
+                <h3>Request Failed</h3>
+                <small>Check that you are online. If you are, the server may be offline.</small>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll ng-if="loadMore" on-infinite="loadMore()" distance="5%" icon=""></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

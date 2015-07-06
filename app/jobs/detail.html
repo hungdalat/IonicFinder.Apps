@@ -1,0 +1,76 @@
+﻿<section id="course_parallax" class="section-white page-title-wrapper" data-stellar-background-ratio="1" data-stellar-offset-parent="true">
+    <div class="container">
+        <div class="relative">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h4>JOB DETAIL</h4>
+
+                    </div><!-- end title -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end relative -->
+    </div><!-- end container -->
+</section>
+<section class="section-white">
+    <div ng-if="ready" class="container">
+        <div class="row">
+            <div id="content" class="col-md-12 col-sm-12">
+                <div class="course-long-desc row">
+                    <div class="col-md-8">
+                        <div class="widget-title">
+                            <h4 ng-bind="jobDetail.title"></h4>
+                            <hr>
+                        </div>
+                        <div ng-bind-html="jobDetail.description"></div>
+
+                        <div class="post-meta clearfix">
+                            <div class="pull-left">
+                                <ul class="social">
+                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar" class="col-md-4">
+                        <div class="widget course-widget">
+                            <div class="widget-title">
+                                <h4>Job Details</h4>
+                                <hr>
+                            </div>
+                            <div class="course-widget">
+                                <ul>
+                                    <li>
+                                        Type : <a href="#"><strong>{{getJobTypeName(jobDetail.type)}}</strong></a>
+                                    </li>
+                                    <li>
+                                        Location : <a href="#"><strong>{{jobDetail.location}}</strong></a>
+                                    </li>
+                                    <li>
+                                        Company : <a href="#/profile/{{jobDetail.createdBy.username}}"><strong>{{jobDetail.createdBy.username}}</strong></a>
+                                    </li>
+                                    <li>
+                                        Tags : <a ng-repeat="tag in jobTags" href="#/tagged/{{tag.name}}"><strong>{{tag.name}}</strong></a>
+                                    </li>
+                                    <li>
+                                        Created : <a><strong>{{timeRemaining(jobDetail.createdAt)}}</strong></a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary">Apply job</a>
+                            </div><!-- end latest-course -->
+                        </div><!-- end widget -->
+                    </div>
+                </div><!-- end desc -->
+
+
+            </div>
+        </div>
+    </div>
+    <div ng-if="!ready" class="container">
+        <div class="row courses-list text-center">
+            <i class="fa fa-spinner fa-pulse loadingicon"></i>
+        </div>
+    </div>
+</section>

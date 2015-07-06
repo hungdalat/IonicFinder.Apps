@@ -1,0 +1,51 @@
+﻿<section class="section-white">
+
+    <div ng-if="viewModel.ready" class="container">
+        <div class="row-title">
+            Latest Jobs
+            <hr />
+        </div>
+        <div class="row courses-list">
+            <div ng-repeat="item in viewModel.datasource" class="col-md-6 col-sm-6 col-xs-12">
+                <div class="course-item row wow fadeIn">
+                    <div class="col-md-12">
+                        <div class="course-desc">
+                            <div class="course-big-meta clearfix">
+                                <div class="pull-left">
+                                    <a class="owl-button" href="#/jobs/type/{{item.type}}">{{getJobTypeName(item.type)}}</a>
+                                    <a class="owl-button"><i class="fa fa-eye"></i> {{item.view || 1}}</a>
+                                    <a class="owl-button"><i class="fa fa-comment"></i> {{item.comment || 0}}</a>
+                                </div>
+                                <div class="pull-left">
+                                    <h5><a href="#/job/{{item.id}}" ng-bind="item.title"></a></h5>
+                                </div>
+                            </div>
+                            <span class="meta">
+                                Location: <a href="">{{item.location}}</a>
+                                - <a href="#/profile/{{item.createdBy.username}}">{{item.createdBy.displayName}}</a> - {{timeRemaining(item.createdAt)}}
+                            </span>
+                        </div><!-- end desc -->
+                    </div>
+                </div><!-- end item -->
+            </div>
+        </div>
+        <nav class="text-center">
+            <ul class="pagination">
+                <li>
+                    <a aria-label="Next" href="#/jobs/list">
+                        View all <span aria-hidden="true">»</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div ng-if="!viewModel.ready" class="container">
+        <div class="row-title">
+            Latest Jobs
+            <hr />
+        </div>
+        <div class="row courses-list text-center">
+            <i class="fa fa-spinner fa-pulse loadingicon"></i>
+        </div>
+    </div>
+</section>

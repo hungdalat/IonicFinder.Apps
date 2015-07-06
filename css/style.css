@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+
+.block {
+    display: block;
+}
+
+.item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content {  
+  padding-right: 10px;
+}

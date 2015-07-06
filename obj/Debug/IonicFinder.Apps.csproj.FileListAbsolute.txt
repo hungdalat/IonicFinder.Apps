@@ -1,0 +1,5 @@
+D:\Working\mBiz\Projects\Ionicfinder\IonicFinder.Apps\IonicFinder.Apps\bin\IonicFinder.Apps.dll
+D:\Working\mBiz\Projects\Ionicfinder\IonicFinder.Apps\IonicFinder.Apps\bin\IonicFinder.Apps.pdb
+D:\Working\mBiz\Projects\Ionicfinder\IonicFinder.Apps\IonicFinder.Apps\obj\Debug\IonicFinder.Apps.csprojResolveAssemblyReference.cache
+D:\Working\mBiz\Projects\Ionicfinder\IonicFinder.Apps\IonicFinder.Apps\obj\Debug\IonicFinder.Apps.dll
+D:\Working\mBiz\Projects\Ionicfinder\IonicFinder.Apps\IonicFinder.Apps\obj\Debug\IonicFinder.Apps.pdb

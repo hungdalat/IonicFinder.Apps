@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30B43FB8-9C95-48A0-A645-6796BC370FF4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IonicFinder.Apps</RootNamespace>
+    <AssemblyName>IonicFinder.Apps</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\account\account.js" />
+    <Content Include="app\account\login.html" />
+    <Content Include="app\account\signup.html" />
+    <Content Include="app\jobs\detail.html" />
+    <Content Include="app\jobs\jobs.js" />
+    <Content Include="app\jobs\list.html" />
+    <Content Include="app\jobs\post.html" />
+    <Content Include="app\jobs\types.html" />
+    <Content Include="app\jobs\_jobsList.html" />
+    <Content Include="app\ultils\helperService.js" />
+    <Content Include="css\style.css" />
+    <Content Include="img\comments-icon.png" />
+    <Content Include="img\ionic.png" />
+    <Content Include="index.html" />
+    <Content Include="app\app.js" />
+    <Content Include="js\controllers.js" />
+    <Content Include="js\services.js" />
+    <Content Include="lib\ionic\css\ionic.css" />
+    <Content Include="lib\ionic\css\ionic.min.css" />
+    <Content Include="lib\ionic\fonts\ionicons.svg" />
+    <Content Include="lib\ionic\js\angular-ui\angular-ui-router.js" />
+    <Content Include="lib\ionic\js\angular-ui\angular-ui-router.min.js" />
+    <Content Include="lib\ionic\js\angular\angular-animate.js" />
+    <Content Include="lib\ionic\js\angular\angular-animate.min.js" />
+    <Content Include="lib\ionic\js\angular\angular-resource.js" />
+    <Content Include="lib\ionic\js\angular\angular-resource.min.js" />
+    <Content Include="lib\ionic\js\angular\angular-sanitize.js" />
+    <Content Include="lib\ionic\js\angular\angular-sanitize.min.js" />
+    <Content Include="lib\ionic\js\angular\angular.js" />
+    <Content Include="lib\ionic\js\angular\angular.min.js" />
+    <Content Include="lib\ionic\js\ionic-angular.js" />
+    <Content Include="lib\ionic\js\ionic-angular.min.js" />
+    <Content Include="lib\ionic\js\ionic.bundle.js" />
+    <Content Include="lib\ionic\js\ionic.bundle.min.js" />
+    <Content Include="lib\ionic\js\ionic.js" />
+    <Content Include="lib\ionic\js\ionic.min.js" />
+    <Content Include="lib\jquery\date.format.js" />
+    <Content Include="lib\jquery\jquery-2.0.0.min.js" />
+    <Content Include="lib\jquery\jquery-ui-timepicker-addon.js" />
+    <Content Include="lib\jquery\jquery-ui.min.js" />
+    <Content Include="lib\jquery\remaining.js" />
+    <Content Include="lib\ngtags\ng-tags-input.bootstrap.min.css" />
+    <Content Include="lib\ngtags\ng-tags-input.min.css" />
+    <Content Include="lib\ngtags\ng-tags-input.min.js" />
+    <Content Include="lib\parse\parse-1.4.2.min.js" />
+    <Content Include="lib\parse\parseRepositories.js" />
+    <Content Include="lib\trumbowyg\langs\ar.min.js" />
+    <Content Include="lib\trumbowyg\langs\ca.min.js" />
+    <Content Include="lib\trumbowyg\langs\cs.min.js" />
+    <Content Include="lib\trumbowyg\langs\da.min.js" />
+    <Content Include="lib\trumbowyg\langs\de.min.js" />
+    <Content Include="lib\trumbowyg\langs\es.min.js" />
+    <Content Include="lib\trumbowyg\langs\es_ar.min.js" />
+    <Content Include="lib\trumbowyg\langs\fa.min.js" />
+    <Content Include="lib\trumbowyg\langs\fi.min.js" />
+    <Content Include="lib\trumbowyg\langs\fr.min.js" />
+    <Content Include="lib\trumbowyg\langs\he.min.js" />
+    <Content Include="lib\trumbowyg\langs\id.min.js" />
+    <Content Include="lib\trumbowyg\langs\it.min.js" />
+    <Content Include="lib\trumbowyg\langs\ja.min.js" />
+    <Content Include="lib\trumbowyg\langs\ko.min.js" />
+    <Content Include="lib\trumbowyg\langs\nl.min.js" />
+    <Content Include="lib\trumbowyg\langs\pl.min.js" />
+    <Content Include="lib\trumbowyg\langs\pt.min.js" />
+    <Content Include="lib\trumbowyg\langs\ro.min.js" />
+    <Content Include="lib\trumbowyg\langs\rs.min.js" />
+    <Content Include="lib\trumbowyg\langs\rs_latin.min.js" />
+    <Content Include="lib\trumbowyg\langs\ru.min.js" />
+    <Content Include="lib\trumbowyg\langs\sk.min.js" />
+    <Content Include="lib\trumbowyg\langs\tr.min.js" />
+    <Content Include="lib\trumbowyg\langs\zh_cn.min.js" />
+    <Content Include="lib\trumbowyg\plugins\base64\trumbowyg.base64.js" />
+    <Content Include="lib\trumbowyg\plugins\base64\trumbowyg.base64.min.js" />
+    <Content Include="lib\trumbowyg\plugins\colors\trumbowyg.colors.js" />
+    <Content Include="lib\trumbowyg\plugins\colors\trumbowyg.colors.min.js" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\images\icons-black-2x.png" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\images\icons-black.png" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\images\icons-white-2x.png" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\images\icons-white.png" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\trumbowyg.colors.css" />
+    <Content Include="lib\trumbowyg\plugins\colors\ui\trumbowyg.colors.min.css" />
+    <Content Include="lib\trumbowyg\plugins\upload\trumbowyg.upload.js" />
+    <Content Include="lib\trumbowyg\plugins\upload\trumbowyg.upload.min.js" />
+    <Content Include="lib\trumbowyg\trumbowyg-ng.min.js" />
+    <Content Include="lib\trumbowyg\trumbowyg.js" />
+    <Content Include="lib\trumbowyg\trumbowyg.min.js" />
+    <Content Include="lib\trumbowyg\ui\images\icons-black-2x.png" />
+    <Content Include="lib\trumbowyg\ui\images\icons-black.png" />
+    <Content Include="lib\trumbowyg\ui\images\icons-white-2x.png" />
+    <Content Include="lib\trumbowyg\ui\images\icons-white.png" />
+    <Content Include="lib\trumbowyg\ui\trumbowyg.css" />
+    <Content Include="lib\trumbowyg\ui\trumbowyg.min.css" />
+    <Content Include="lib\underscorejs\underscore-min.js" />
+    <Content Include="templates\jobdetail.html" />
+    <Content Include="templates\chat-detail.html" />
+    <Content Include="templates\tab-account.html" />
+    <Content Include="templates\tab-chats.html" />
+    <Content Include="templates\tab-job.html" />
+    <Content Include="templates\tabs.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\ionic\fonts\ionicons.eot" />
+    <Content Include="lib\ionic\fonts\ionicons.ttf" />
+    <Content Include="lib\ionic\fonts\ionicons.woff" />
+    <Content Include="lib\ionic\scss\ionic.scss" />
+    <Content Include="lib\ionic\scss\ionicons\ionicons.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-font.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-icons.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-variables.scss" />
+    <Content Include="lib\ionic\scss\_action-sheet.scss" />
+    <Content Include="lib\ionic\scss\_animations.scss" />
+    <Content Include="lib\ionic\scss\_backdrop.scss" />
+    <Content Include="lib\ionic\scss\_badge.scss" />
+    <Content Include="lib\ionic\scss\_bar.scss" />
+    <Content Include="lib\ionic\scss\_button-bar.scss" />
+    <Content Include="lib\ionic\scss\_button.scss" />
+    <Content Include="lib\ionic\scss\_checkbox.scss" />
+    <Content Include="lib\ionic\scss\_form.scss" />
+    <Content Include="lib\ionic\scss\_grid.scss" />
+    <Content Include="lib\ionic\scss\_items.scss" />
+    <Content Include="lib\ionic\scss\_list.scss" />
+    <Content Include="lib\ionic\scss\_loading.scss" />
+    <Content Include="lib\ionic\scss\_menu.scss" />
+    <Content Include="lib\ionic\scss\_mixins.scss" />
+    <Content Include="lib\ionic\scss\_modal.scss" />
+    <Content Include="lib\ionic\scss\_platform.scss" />
+    <Content Include="lib\ionic\scss\_popover.scss" />
+    <Content Include="lib\ionic\scss\_popup.scss" />
+    <Content Include="lib\ionic\scss\_progress.scss" />
+    <Content Include="lib\ionic\scss\_radio.scss" />
+    <Content Include="lib\ionic\scss\_range.scss" />
+    <Content Include="lib\ionic\scss\_refresher.scss" />
+    <Content Include="lib\ionic\scss\_reset.scss" />
+    <Content Include="lib\ionic\scss\_scaffolding.scss" />
+    <Content Include="lib\ionic\scss\_select.scss" />
+    <Content Include="lib\ionic\scss\_slide-box.scss" />
+    <Content Include="lib\ionic\scss\_spinner.scss" />
+    <Content Include="lib\ionic\scss\_tabs.scss" />
+    <Content Include="lib\ionic\scss\_toggle.scss" />
+    <Content Include="lib\ionic\scss\_transitions.scss" />
+    <Content Include="lib\ionic\scss\_type.scss" />
+    <Content Include="lib\ionic\scss\_util.scss" />
+    <Content Include="lib\ionic\scss\_variables.scss" />
+    <Content Include="lib\ionic\version.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37667</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:37667/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
